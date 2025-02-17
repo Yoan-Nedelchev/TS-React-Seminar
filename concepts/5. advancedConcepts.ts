@@ -3,8 +3,6 @@
 // overloads
 function combine(a: string, b: string): string;
 function combine(a: number, b: number): number;
-
-// function signature (must take into account all cases)
 function combine(a: string | number, b: string | number): string | number {
   if (typeof a === "string" && typeof b === "string") {
     // narrowed

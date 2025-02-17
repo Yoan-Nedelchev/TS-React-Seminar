@@ -1,5 +1,5 @@
 // string
-let greeting = "Hello, TypeScript!";
+let greeting: string = "Hello, TypeScript!";
 
 // boolean
 let isOpen: boolean = true;
@@ -20,10 +20,14 @@ let uniqueKey: symbol = Symbol("unique");
 let anything: any = "Start as a string";
 anything = 42;
 anything = true; // still no error
+// anything.toUpperCase()
 
 // unknown (requires type checks or assertions before usage)
 let uncertain: unknown = "Could be anything";
+// ivalid
+// uncertain.toUpperCase()
 uncertain = 99;
+uncertain = "some string";
 if (typeof uncertain === "string") {
   console.log(uncertain.toUpperCase());
 }
